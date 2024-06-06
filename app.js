@@ -1,3 +1,5 @@
+import button from index.html
+
 //  navbar toggle
 
 const navLinks = document.querySelector("nav .nav-links");
@@ -38,12 +40,4 @@ function closeMenu() {
 
 // prevent form default action
 
-const form = document.querySelector("form");
-form.addEventListener("submit", function (e) {
-  e.preventDefault();
-});
 
-// deleting the dom element
-const scrollTop = () => {
-  sectionHero.scrollIntoView({ behavior: "smooth" });
-};
