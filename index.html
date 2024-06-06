@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <script src="https://unpkg.com/@phosphor-icons/web"></script>
+  <title>Web Portfolio</title>
+
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="responsive.css" />
+</head>
+
+<body>
+  <div class="container">
+    <nav>
+      <div class="nav-menu">
+        <div class="logo">
+          <a href="#"><i class="ph-fill ph-read-cv-logo"></i></a>
+        </div>
+        <div class="hamburger-menu">
+          <div class="bar"></div>
+          <div class="bar"></div>
+          <div class="bar"></div>
+        </div>
+      </div>
+      <div class="nav-links">
+        <a href="#about">About</a>
+        <a href="#work">Work</a>
+        <a href="#contact">Contact</a>
+        <button onclick="closeMenu()" class="close-button">X</button>
+      </div>
+    </nav>
+
+    <!-- main -->
+    <main>
+      <!-- hero -->
+      <section>
+        <div class="container hero">
+          <!-- left side of hero section -->
+          <div class="hero-left">
+            <div class="hero_left_content">
+              <h3>Vinicius Borges | Web Dev</h3>
+              <h1>About My Jorney</h1>
+              <p>
+                My name is Vinicius Borges, I am a web developer and I have been working in the area for 6 months. I
+                have experience in creating websites and web applications. I am passionate about technology and I am
+                always looking for new challenges. I am currently looking for new opportunities to work on new projects
+                and improve my skills.
+              </p>
+              <a href="#contact">
+                <button class="cta">Contact</button>
+              </a>
+            </div>
+          </div>
+
+          <!-- right side of hero section -->
+          <div class="hero-right">
+            <img src="img/me.png" alt="hero-image" />
+          </div>
+        </div>
+      </section>
+
+      <!-- Brands worked with. section -->
+      <section>
+        <div class="container brands">
+          <i class="ph ph-file-css"></i>
+
+          <i class="ph ph-file-html"></i>
+
+          <i class="ph ph-file-js"></i>
+
+          <i class="ph ph-atom"></i>
+
+          <i class="ph ph-file-py"></i>
+        </div>
+      </section>
+
+      <!-- skills section -->
+      <section id="about">
+        <div class="container">
+          <div class="skills_section">
+            <div class="skill_card">
+              <img src="img/skill2.svg" alt="" />
+              <h3>FullStack Dev</h3>
+              <button class="dropdown-btn">More Info</button>
+              <div class="dropdown-content">
+                <p>
+                  As a beginner fullstack developer with four months of experience, I have a foundational understanding
+                  of both front-end and back-end development. On the front end, I'm proficient in HTML and CSS for
+                  creating and styling web pages, and I have basic experience with JavaScript and React for adding
+                  interactivity and building user interfaces. On the back end, I have started learning PHP and Python
+                  for server-side scripting. I can create simple web applications that integrate front-end interfaces
+                  with back-end logic, focusing on understanding the full development lifecycle and how different
+                  technologies work together.
+                </p>
+              </div>
+            </div>
+
+            <div class="skill_card">
+              <img src="img/skill1.svg" alt="" />
+              <h3>front-end</h3>
+              <button class="dropdown-btn">More Info</button>
+              <div class="dropdown-content">
+                <p>
+                  As a beginner frontend engineer with four months of experience, I have a good grasp of the basic
+                  tools and technologies used in front-end development. I'm proficient in HTML and CSS for structuring
+                  and styling web pages, and I have basic knowledge of JavaScript for adding interactivity.
+                  Additionally, I have experience using React for building dynamic user interfaces and Bootstrap for
+                  creating responsive designs. My focus has been on developing visually appealing and user-friendly
+                  web pages, enhancing my skills in the visual and interactive aspects of web development.
+                </p>
+              </div>
+            </div>
+
+            <div class="skill_card">
+              <img src="img/skill3.svg" alt="" />
+              <h3>Back-end</h3>
+              <button class="dropdown-btn">More Info</button>
+              <div class="dropdown-content">
+                <p>
+                  As a beginner backend engineer with four months of experience, I have started to develop a basic
+                  understanding of server-side development. My experience includes using PHP for building dynamic
+                  web pages and starting with Python for scripting and basic backend functionalities. I have a
+                  foundational knowledge of handling server requests, routing, and connecting to databases. My focus
+                  has been on creating simple backend applications that support front-end interfaces, helping me
+                  grasp essential backend engineering concepts and workflows.
+                </p>
+              </div>
+            </div>
+      </section>
+
+      <!--project section -->
+      <div style="text-align: center;">
+        <h1 style="font-size: 30px;"><b>PERSONAL PROJECTS</b></h1>
+      </div>
+      <section id="portfolio" data-aos="fade-up">
+        <div class="portfolio-container">
+          <div class="portfolio-wrapper">
+            <div class="uiux">
+              <a href="https://co-op-coffee-website.vercel.app" target="_blank" class="card-view">
+                <i class="fab fa-medium"></i>
+                <div class="card-text">
+                  <b class="card-detail">Best Project I've worked on</b>
+                </div>
+              </a>
+            </div>
+            <div class="webdev">
+              <a href="https://github.com/ViniciusBorgesCptbr?tab=projects" target="_blank" class="card-view">
+                <i class="fas fa-code"></i>
+                <div class="card-text">
+                  <b class="card-detail">My Web Development Projects</b>
+                </div>
+              </a>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- Gallery section -->
+
+      <section id="work">
+        <div class="container gallery-section">
+          <h2>Latest Work</h2>
+          <div class="gallery">
+            <div class="gallery-card">
+              <img src="img/project1.png" alt="" />
+              <div class="gallery-card-info">
+                <h3>Parallax PNG</h3>
+                <p>Creating a Parallax Effect only using HTML - CSS & JavaScript.</p>
+              </div>
+            </div>
+            <div class="gallery-card">
+              <img src="img/project2.png" alt="" />
+              <div class="gallery-card-info">
+                <h3>Parallax SVGS</h3>
+                <p>Creating a web page with a Parallax Effect, this time using Vectors insted of images, and making it
+                  responsive.</p>
+              </div>
+            </div>
+            <div class="gallery-card">
+              <img src="img/project3.png" alt="" />
+              <div class="gallery-card-info">
+                <h3>Cloth Shop</h3>
+                <p>Creating a Web Store for a Woman's cloth shop, connecting the front-end with the back-end using PHP
+                  and MySql database.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+  </div>
+  </section>
+
+  <!-- Testimonial section -->
+  <section>
+    <div class="container testimonial">
+      <h2>Reviews</h2>
+      <div class="testimonial-container">
+        <div class="testimonial-card">
+          <p>
+            "I saw your Parallax project and I was amazed by the quality of your work. Keep it up!"
+          </p>
+          <div class="testimonial-footer">
+            <div class="client-img">
+              <img src="img/Client Image.png" alt="" />
+            </div>
+            <div class="review">
+              <div class="reviewStars">
+                <!-- dynamically appended 5 stars here using js -->
+              </div>
+              <span class="client-name">Joao Pedro</span>
+            </div>
+          </div>
+        </div>
+        <div class="testimonial-card">
+          <p>
+            This is a template Figma file, turned into code using Anima.
+            Learn more at AnimaApp.com
+          </p>
+          <div class="testimonial-footer">
+            <div class="client-img">
+              <img src="img/Client Image.png" alt="" />
+            </div>
+            <div class="review">
+              <div class="reviewStars">
+                <!-- dynamically a ppended 5 stars here using js -->
+              </div>
+              <span class="client-name">Gemma Nolen</span>
+              <span class="client-company">Google</span>
+            </div>
+          </div>
+        </div>
+        <div class="testimonial-card">
+          <p>
+            This is a template Figma file, turned into code using Anima.
+            Learn more at AnimaApp.com
+          </p>
+          <div class="testimonial-footer">
+            <div class="client-img">
+              <img src="img/Client Image.png" alt="" />
+            </div>
+            <div class="review">
+              <div class="reviewStars">
+                <!-- dynamically a ppended 5 stars here using js -->
+              </div>
+              <span class="client-name">Gemma Nolen</span>
+              <span class="client-company">Google</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer id="contact">
+    <div class="container footer">
+      <!-- left side of hero section -->
+      <div class="footer-left">
+        <div class="footer_left_content">
+          <h2>Lets work together</h1>
+            <p>
+              I am currently looking for new opportunities to work on new projects and improve my skills. If you have a
+              project in mind or want to collaborate, feel free to reach out to me.
+            </p>
+            <div class="social">
+              <a href="#"><img src="img/discord.svg" alt="discord" /></a>
+              <a href="#"><img src="img/facebook.svg" alt="facebook" /></a>
+              <a href="#"><img src="img/nstagram.svg" alt="instagram" /></a>
+            </div>
+        </div>
+      </div>
+
+      <!-- right side of footer -->
+      <div class="footer-right">
+        <form>
+          <input type="text" placeholder="Name">
+          <input type="email" placeholder="Email">
+          <button type="submit" class="cta">Submit</button>
+        </form>
+      </div>
+    </div>
+    <span class="copyright">
+      &copy; 2024 All rights reserved. Developed by <a target="_blank"
+        href="https://github.com/ViniciusBorgesCptbr">Vinicius Borges
+      </a>
+    </span>
+  </footer>
+
+  </main>
+  </div>
+
+  <script src="app.js"></script>
+</body>
+
+</html>
